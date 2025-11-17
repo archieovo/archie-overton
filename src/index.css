@@ -13,7 +13,7 @@ header{
     width: 100%;
     left: 0;
     right: 0;
-    height: max(10vh, 120px);;
+    height: max(10vh, 120px);
     min-height: 100px;
     z-index: 10;
 
@@ -393,7 +393,7 @@ a {
 
 .availability-status strong {
     color: #579e85;
-
+}
 /* Skills Section Styles */
 .skills-container {
     display: flex;
