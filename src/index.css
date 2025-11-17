@@ -493,6 +493,10 @@ a {
 main {
 /* Responsive adjustments for new sections */
 @media (max-width: 768px) {
+    .app-container {
+        padding-top: max(10vh, 120px);
+    }
+    
     .hero-section {
         padding: 2vh 5vw !important;
     }
