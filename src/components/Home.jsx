@@ -30,8 +30,6 @@ function Home() {
                     <button onClick={() => scrollToSection('contact')} className="nav-pill">Contact</button>
                 </nav>
 
-                <p>I'm a motivated and reliable individual with a strong passion for technology, eager to grow my experience in cybersecurity and software engineering through an apprenticeship or entry-level role. I enjoy solving complex problems and continuously expanding my technical knowledge by exploring new programming languages and frameworks such as React. Alongside this, I'm developing my understanding of core cybersecurity principles through independent study, driven by a genuine curiosity for how systems and data can be protected.</p>
-
             </div>
 
             <div id="skills" className="bg">
