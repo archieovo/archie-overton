@@ -491,6 +491,9 @@ a {
 }
 
 main {
+
+    
+}
 /* Responsive adjustments for new sections */
 @media (max-width: 768px) {
     
@@ -540,6 +543,4 @@ main {
         font-size: 0.95rem;
     }
     
-}
-}
 }
