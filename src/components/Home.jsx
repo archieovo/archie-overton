@@ -7,29 +7,98 @@ function Home() {
             <div id="introduction" className="alt-bg">
                 <h1>Introduction</h1>
 
-                <p>I’m a motivated and reliable individual with a strong passion for technology, eager to grow my experience in cybersecurity and software engineering through an apprenticeship or entry-level role. I enjoy solving complex problems and continuously expanding my technical knowledge by exploring new programming languages and frameworks such as React. Alongside this, I’m developing my understanding of core cybersecurity principles through independent study, driven by a genuine curiosity for how systems and data can be protected.</p>
+                <p>I'm a motivated and reliable individual with a strong passion for technology, eager to grow my experience in cybersecurity and software engineering through an apprenticeship or entry-level role. I enjoy solving complex problems and continuously expanding my technical knowledge by exploring new programming languages and frameworks such as React. Alongside this, I'm developing my understanding of core cybersecurity principles through independent study, driven by a genuine curiosity for how systems and data can be protected.</p>
             </div>
 
-            <div className="bg">
+            <div id="skills" className="bg">
+                <h1>Technical Skills</h1>
+                <div className="skills-container">
+                    <div className="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div className="skills-grid">
+                            <span className="skill-badge">Python</span>
+                            <span className="skill-badge">JavaScript</span>
+                            <span className="skill-badge">HTML</span>
+                            <span className="skill-badge">CSS</span>
+                        </div>
+                    </div>
+                    <div className="skill-category">
+                        <h3>Frameworks & Libraries</h3>
+                        <div className="skills-grid">
+                            <span className="skill-badge">React</span>
+                            <span className="skill-badge">Vite</span>
+                        </div>
+                    </div>
+                    <div className="skill-category">
+                        <h3>Tools & Technologies</h3>
+                        <div className="skills-grid">
+                            <span className="skill-badge">Git</span>
+                            <span className="skill-badge">GitHub</span>
+                            <span className="skill-badge">Database Management</span>
+                            <span className="skill-badge">Object-Oriented Programming</span>
+                        </div>
+                    </div>
+                    <div className="skill-category">
+                        <h3>Areas of Interest</h3>
+                        <div className="skills-grid">
+                            <span className="skill-badge">Cybersecurity</span>
+                            <span className="skill-badge">Software Engineering</span>
+                            <span className="skill-badge">Web Development</span>
+                            <span className="skill-badge">Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="education" className="alt-bg">
+                <h1>Education</h1>
+                <div className="education-content">
+                    <div className="education-item">
+                        <h3>Current Education</h3>
+                        <p>Actively pursuing knowledge in software engineering and cybersecurity through hands-on projects and work experience placements.</p>
+                    </div>
+                    <div className="education-item">
+                        <h3>Self-Directed Learning</h3>
+                        <ul>
+                            <li>Python programming and Object-Oriented Programming principles</li>
+                            <li>Modern web development with React and Vite</li>
+                            <li>Database management systems</li>
+                            <li>Core cybersecurity principles and best practices</li>
+                            <li>Data analysis and interpretation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="projects" className="bg">
+                <h1>Projects</h1>
                 <div className="grid" id="repo-grid">
                     <a className="card" href="https://github.com/archieovo/archie-overton" target="_blank">
-                        <img src="https://opengraph.githubassets.com/1/archieovo/archie-overton" alt="Computer Science Project" />
+                        <img src="https://opengraph.githubassets.com/1/archieovo/archie-overton" alt="Portfolio Website" />
                         <div className="card-content">
-                            <h2>Website Source Code</h2>
-                            <p>This is the source code for my website!</p>
+                            <h2>Portfolio Website</h2>
+                            <p>A modern, responsive portfolio website built to showcase my projects, skills, and professional journey.</p>
+                            <div className="tech-tags">
+                                <span className="tech-tag">React</span>
+                                <span className="tech-tag">Vite</span>
+                                <span className="tech-tag">CSS</span>
+                                <span className="tech-tag">JavaScript</span>
+                            </div>
                         </div>
                     </a>
 
-                </div>
-                <div className="grid" id="repo-grid">
                     <a className="card" href="https://github.com/archieovo/Comp-Science-Project" target="_blank">
-                        <img src="https://opengraph.githubassets.com/1/archieovo/Comp-Science-Project" alt="Computer Science Project" />
+                        <img src="https://opengraph.githubassets.com/1/archieovo/Comp-Science-Project" alt="Gym Track Application" />
                         <div className="card-content">
                             <h2>Replica Gym Track App</h2>
-                            <p>Through the creation of this project I explored the fundamentals of OOP in python and database management systems</p>
+                            <p>A comprehensive gym tracking application demonstrating object-oriented programming principles and database management. Features include workout logging, progress tracking, and data persistence.</p>
+                            <div className="tech-tags">
+                                <span className="tech-tag">Python</span>
+                                <span className="tech-tag">OOP</span>
+                                <span className="tech-tag">Database</span>
+                            </div>
                         </div>
                     </a>
-
                 </div>
             </div>
 
