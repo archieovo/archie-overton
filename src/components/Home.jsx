@@ -1,4 +1,5 @@
 import React from 'react';
+import GitHubStats from './GitHubStats';
 
 
 function Home() {
@@ -126,7 +127,9 @@ function Home() {
                 </div>
             </div>
 
-
+            <div className="bg">
+                <GitHubStats />
+            </div>
 
             <div id="interestInTech" className="alt-bg">
                 <h1>Interest In Technology</h1>
