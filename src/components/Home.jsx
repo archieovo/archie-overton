@@ -116,8 +116,8 @@ function Home() {
 
             <div className="bg">
                 <div className="cert_container">
-                    <a href="https://certificates.young-professionals.uk/c/021cccf5658648f8af19be2a5a3f7a98" target="_blank">
-                        <img id="certImage" src="/assets/cert.png" alt="Work experience certificate" />
+                    <a href="https://certificates.young-professionals.uk/c/021cccf5658648f8af19be2a5a3f7a98" target="_blank" rel="noopener noreferrer">
+                        <img id="certImage" src="/assets/cert.png" alt="Experian Work Insight Day Certificate - November 1st 2024" loading="lazy" />
                     </a>
                     <div id="mhrImage" className="experianText">
                         <p>    Experian Nottingham – Work Insight Day (1st November 2024)
@@ -130,8 +130,8 @@ function Home() {
 
             <div className="bg">
                 <div className="mhr_container">
-                    <a href="https://mhrglobal.com/uk/en?_gl=1*gyk2af*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiA5uDIBhDAARIsAOxj0CGeh2sXWgjjNvikeN7pDfy9kBpJu6Ig9NIilN8Uc0ezQoSq6g12rw8aAif0EALw_wcB&gclsrc=aw.ds&gbraid=0AAAAAD84ZFnMLq5CrPAHSZjlRYLkIK9Iy" target="_blank">
-                        <img src="/assets/edited-mhr.png" alt="Upcoming Work Experience" />
+                    <a href="https://mhrglobal.com/uk/en?_gl=1*gyk2af*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiA5uDIBhDAARIsAOxj0CGeh2sXWgjjNvikeN7pDfy9kBpJu6Ig9NIilN8Uc0ezQoSq6g12rw8aAif0EALw_wcB&gclsrc=aw.ds&gbraid=0AAAAAD84ZFnMLq5CrPAHSZjlRYLkIK9Iy" target="_blank" rel="noopener noreferrer">
+                        <img src="/assets/edited-mhr.png" alt="MHR Global Logo - Upcoming Work Experience January 2025" loading="lazy" />
                     </a>
                     <div id="upcomingWorkExperience">
                         <p>Upcoming Work Experience – MHR Global (Cybersecurity & Software Development)
