@@ -489,9 +489,9 @@ a {
     border-radius: 15px;
     font-size: 0.8rem;
     font-weight: 500;
- main
 }
 
+main {
 /* Responsive adjustments for new sections */
 @media (max-width: 768px) {
  feature/design-ux-improvements
