@@ -242,6 +242,7 @@ a {
     }
 }
 
+ feature/design-ux-improvements
 /* Hero Section & CTA Styles */
 .hero-section {
     padding: 3vh 20vw 2vh 20vw !important;
@@ -393,10 +394,107 @@ a {
 
 .availability-status strong {
     color: #579e85;
+
+/* Skills Section Styles */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.skill-category h3 {
+    color: #579e85;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #579e85;
+    padding-bottom: 0.5rem;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.skill-badge {
+    background-color: #579e85;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    cursor: default;
+}
+
+.skill-badge:hover {
+    transform: translateY(-2px);
+    background-color: #46806c;
+}
+
+/* Education Section Styles */
+.education-content {
+    margin-top: 1rem;
+}
+
+.education-item {
+    margin-bottom: 2rem;
+}
+
+.education-item h3 {
+    color: #579e85;
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+}
+
+.education-item p {
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.education-item ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.8;
+}
+
+.education-item ul li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.education-item ul li:before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #579e85;
+    font-weight: bold;
+}
+
+/* Tech Tags for Project Cards */
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tech-tag {
+    background-color: #579e85;
+    color: white;
+    padding: 0.3rem 0.7rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+ main
 }
 
 /* Responsive adjustments for new sections */
 @media (max-width: 768px) {
+ feature/design-ux-improvements
     .hero-section {
         padding: 2vh 5vw !important;
     }
@@ -428,5 +526,18 @@ a {
 
     .contact-icon {
         font-size: 2.5rem;
+
+    .skills-grid {
+        justify-content: center;
+    }
+
+    .skill-badge {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .education-item ul li {
+        font-size: 0.95rem;
+ main
     }
 }
