@@ -23,7 +23,6 @@ function Home() {
                     </div>
                 </div>
 
- feature/design-ux-improvements
                 <nav className="quick-nav">
                     <button onClick={() => scrollToSection('introduction')} className="nav-pill">About</button>
                     <button onClick={() => scrollToSection('projects')} className="nav-pill">Projects</button>
