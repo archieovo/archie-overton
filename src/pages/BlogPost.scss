@@ -35,22 +35,27 @@
         padding-bottom: $spacing-lg;
         border-bottom: 2px solid rgba(87, 158, 133, 0.3);
 
-        .post-meta {
-            display: flex;
-            gap: $spacing-sm;
-            flex-wrap: wrap;
-            font-size: $font-size-sm;
-            color: $text-medium-gray;
-            margin-bottom: $spacing-sm;
+      .post-meta {
+        display: flex;
+        gap: $spacing-sm;
+        flex-wrap: wrap;
+        font-size: $font-size-sm;
+        color: $text-medium-gray;
+        margin-top: $spacing-sm;
 
-            .post-category {
-                background-color: rgba(87, 158, 133, 0.2);
-                color: $primary-color;
-                padding: 0.25rem 0.75rem;
-                border-radius: $border-radius-pill;
-                font-weight: 500;
-            }
-        }
+      .post-category {
+        background-color: rgba(87, 158, 133, 0.2);
+        color: $primary-color;
+        padding: 0.25rem 0.75rem;
+        border-radius: $border-radius-pill;
+        font-weight: 500;
+      }
+
+      .post-date,
+      .post-read-time {
+        padding: 0.25rem 0;
+      }
+    }
 
         h1 {
             font-size: 2.5rem;
