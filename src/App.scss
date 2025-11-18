@@ -1,0 +1,31 @@
+@use 'styles/variables' as *;
+
+// App Layout - Root container for all pages
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+}
+
+// Section background utilities (reusable across pages)
+.alt-bg, .bg {
+    color: $text-light;
+    font-family: $font-secondary;
+    padding: $section-padding;
+}
+
+.bg {
+    background-color: $bg-main;
+}
+
+.alt-bg {
+    background-color: $bg-alt;
+}
+
+.alt-card {
+    background-color: $bg-main;
+}
