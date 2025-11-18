@@ -29,7 +29,7 @@ function BlogPost() {
             <span className="post-read-time">{post.readTime}</span>
           </div>
 
-          <h1>{post.title}</h1>
+
 
           <div className="post-tags">
             {post.tags.map((tag, index) => (
@@ -39,6 +39,7 @@ function BlogPost() {
         </header>
 
         <div className="post-content">
+            <h1>{post.title}</h1>
           <ReactMarkdown>{post.content}</ReactMarkdown>
         </div>
 
