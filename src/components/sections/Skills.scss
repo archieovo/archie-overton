@@ -1,0 +1,50 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+// Skills Section Styles
+.skills-container {
+    @include flex-column;
+    gap: $spacing-lg;
+    margin-top: $spacing-sm;
+}
+
+.skill-category {
+    h3 {
+        @include section-heading;
+    }
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.skill-badge {
+    background-color: $primary-color;
+    color: white;
+    padding: $spacing-xs $spacing-sm;
+    border-radius: $border-radius-lg;
+    font-size: $font-size-sm;
+    font-weight: 500;
+    transition: $transition-fast;
+    cursor: default;
+
+    &:hover {
+        transform: translateY(-2px);
+        background-color: $primary-hover;
+    }
+}
+
+// Responsive
+@include mobile {
+    .skills-grid {
+        justify-content: center;
+    }
+
+    .skill-badge {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+}

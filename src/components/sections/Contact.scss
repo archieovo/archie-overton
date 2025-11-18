@@ -1,0 +1,87 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+// Contact Section Styles
+.contact-section {
+    padding: 4vh 20vw !important;
+    text-align: center;
+}
+
+.contact-intro {
+    font-size: $font-size-md;
+    margin-bottom: 2.5rem;
+    color: $text-gray;
+}
+
+.contact-grid {
+    @include grid-auto;
+    margin: $spacing-lg 0;
+}
+
+.contact-card {
+    background-color: $bg-main;
+    padding: $spacing-lg;
+    border-radius: $border-radius-md;
+    border: 2px solid $primary-color;
+    @include hover-lift;
+
+    &:hover {
+        border-color: $primary-hover;
+    }
+
+    h3 {
+        color: $text-light;
+        margin: 0.5rem 0;
+        font-size: $font-size-lg;
+    }
+
+    a {
+        color: $text-gray;
+        text-decoration: none;
+        font-size: $font-size-base;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+.contact-icon {
+    font-size: 3rem;
+    color: $primary-color;
+    margin-bottom: $spacing-sm;
+}
+
+.availability-status {
+    margin-top: $spacing-xl;
+    padding: 1.5rem;
+    background-color: rgba(87, 158, 133, 0.1);
+    border-radius: $border-radius-sm;
+    border-left: 4px solid $primary-color;
+
+    p {
+        margin: 0.5rem 0;
+        font-size: $font-size-base;
+        color: $text-light;
+    }
+
+    strong {
+        color: $primary-color;
+    }
+}
+
+// Responsive
+@include mobile {
+    .contact-section {
+        padding: 3vh 5vw !important;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-icon {
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,72 @@
+// Color Variables
+$primary-color: #579e85;
+$primary-hover: #46806c;
+
+// Dark Mode Colors (default)
+$dark-bg-dark: #212121;
+$dark-bg-main: #363636;
+$dark-bg-alt: #414040;
+$dark-text-light: whitesmoke;
+$dark-text-gray: #bebebe;
+$dark-text-dark-gray: #929191;
+$dark-text-medium-gray: #bdbdbd;
+
+// Light Mode Colors
+$light-bg-main: #f5f5f5;
+$light-bg-alt: #ffffff;
+$light-bg-dark: #e0e0e0;
+$light-text-light: #1a1a1a;
+$light-text-gray: #4a4a4a;
+$light-text-dark-gray: #6a6a6a;
+$light-text-medium-gray: #8a8a8a;
+
+// Theme Variables (will be updated by CSS variables)
+$bg-dark: var(--bg-dark);
+$bg-main: var(--bg-main);
+$bg-alt: var(--bg-alt);
+$text-light: var(--text-light);
+$text-gray: var(--text-gray);
+$text-dark-gray: var(--text-dark-gray);
+$text-medium-gray: var(--text-medium-gray);
+
+// Border & Shadow
+$border-color: $text-dark-gray;
+$border-radius-sm: 8px;
+$border-radius-md: 12px;
+$border-radius-lg: 20px;
+$border-radius-pill: 25px;
+
+// Spacing
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 3rem;
+$spacing-xxl: 4rem;
+
+// Typography
+$font-primary: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-secondary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+$font-size-xs: 0.8rem;
+$font-size-sm: 0.9rem;
+$font-size-base: 1rem;
+$font-size-md: 1.1rem;
+$font-size-lg: 1.2rem;
+$font-size-xl: 1.3rem;
+$font-size-xxl: 2rem;
+
+// Transitions
+$transition-fast: all 0.2s ease;
+$transition-base: all 0.3s ease;
+
+// Breakpoints
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
+$breakpoint-desktop: 1440px;
+
+// Layout
+$header-height: 80px;
+$header-min-height: 80px;
+$section-padding: 2vh 20vw;
+$section-padding-mobile: 2vh 5vw;

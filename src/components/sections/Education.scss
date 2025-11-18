@@ -1,0 +1,47 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+// Education Section Styles
+.education-content {
+    margin-top: $spacing-sm;
+}
+
+.education-item {
+    margin-bottom: $spacing-lg;
+
+    h3 {
+        @include section-heading;
+    }
+
+    p {
+        line-height: 1.6;
+        margin-bottom: 0.5rem;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+        line-height: 1.8;
+
+        li {
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+
+            &:before {
+                content: "▹";
+                position: absolute;
+                left: 0;
+                color: $primary-color;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// Responsive
+@include mobile {
+    .education-item ul li {
+        font-size: 0.95rem;
+    }
+}

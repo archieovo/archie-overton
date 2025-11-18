@@ -1,0 +1,47 @@
+@use '../styles/variables' as *;
+
+// Home Page Layout
+.home-page {
+    display: flex;
+    flex-direction: column;
+}
+
+// Page-specific element positioning
+#introduction {
+    margin-top: $header-height;
+    padding-top: $spacing-lg;
+}
+
+#interestInTech {
+    margin-top: 20px;
+}
+
+#workExperience {
+    margin-top: 20px;
+}
+
+// Section background utilities (reusable across pages)
+.alt-bg, .bg {
+    color: $text-light;
+    font-family: $font-secondary;
+    padding: $section-padding;
+
+    // Container for large screens
+    > * {
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.bg {
+    background-color: $bg-main;
+}
+
+.alt-bg {
+    background-color: $bg-alt;
+}
+
+.alt-card {
+    background-color: $bg-main;
+}

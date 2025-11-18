@@ -1,0 +1,158 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+// Header Styles
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: $header-height;
+    min-height: $header-min-height;
+    z-index: 10;
+    background-color: $bg-dark;
+    font-family: $font-primary;
+    color: $text-light;
+
+    @include flex-row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    * {
+        flex: 1;
+    }
+}
+
+#profile_photo {
+    border-radius: 50%;
+    height: 80%;
+    object-fit: contain;
+    margin: auto 20px;
+    flex: 0;
+}
+
+#title {
+    font-size: $font-size-xxl;
+    color: $text-light;
+    text-decoration: none;
+    transition: $transition-fast;
+
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+#titlecard {
+    @include flex-column;
+
+    p {
+        font-size: $font-size-xs;
+    }
+}
+
+// Page Navigation Links
+#nav-links {
+    @include flex-row;
+    gap: $spacing-sm;
+    flex: 0.5;
+    justify-content: center;
+
+    .nav-link {
+        color: $text-light;
+        text-decoration: none;
+        font-size: $font-size-base;
+        padding: 0.5rem 1rem;
+        border-radius: $border-radius-sm;
+        transition: $transition-fast;
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background-color: rgba(87, 158, 133, 0.2);
+            color: $primary-color;
+        }
+
+        &.active {
+            background-color: $primary-color;
+            color: white;
+        }
+
+        // Style blog link as a button
+        &.blog-button {
+            background-color: $primary-color;
+            color: white;
+            font-weight: 500;
+            padding: 0.6rem 1.2rem;
+
+            &:hover {
+                background-color: $primary-hover;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 8px rgba(87, 158, 133, 0.3);
+            }
+        }
+    }
+}
+
+// Theme Toggle Button
+.theme-toggle {
+    background: none;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: $transition-fast;
+    margin: 0 $spacing-sm;
+    flex: 0;
+
+    svg {
+        color: $primary-color;
+        transition: $transition-fast;
+    }
+
+    &:hover {
+        background-color: rgba(87, 158, 133, 0.2);
+        transform: scale(1.1);
+
+        svg {
+            color: $primary-hover;
+        }
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+// Social Media Links
+#social-links {
+    height: 80%;
+    max-width: 20%;
+    margin: auto 20px;
+    align-self: flex-end;
+
+    @include flex-row;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+
+    a {
+        scale: 2;
+        color: $text-light;
+        margin: auto 15px;
+        text-decoration: none;
+        cursor: pointer;
+        flex: 0;
+        transition: $transition-fast;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
