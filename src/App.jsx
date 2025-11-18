@@ -9,7 +9,7 @@ import './global.scss'
 
 function App() {
   return (
-    <Router basename="/archie-overton">
+    <Router basename="/">
       <div className="app-container">
         <Header />
         <main className="main-content">
