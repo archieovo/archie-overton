@@ -1,0 +1,56 @@
+@use 'styles/variables' as *;
+@use 'styles/fonts';
+
+// Global Reset
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// Theme CSS Variables
+:root {
+    // Dark mode (default)
+    --bg-dark: #{$dark-bg-dark};
+    --bg-main: #{$dark-bg-main};
+    --bg-alt: #{$dark-bg-alt};
+    --text-light: #{$dark-text-light};
+    --text-gray: #{$dark-text-gray};
+    --text-dark-gray: #{$dark-text-dark-gray};
+    --text-medium-gray: #{$dark-text-medium-gray};
+}
+
+[data-theme="light"] {
+    --bg-dark: #{$light-bg-dark};
+    --bg-main: #{$light-bg-main};
+    --bg-alt: #{$light-bg-alt};
+    --text-light: #{$light-text-light};
+    --text-gray: #{$light-text-gray};
+    --text-dark-gray: #{$light-text-dark-gray};
+    --text-medium-gray: #{$light-text-medium-gray};
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-secondary;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
+    background-color: $bg-main;
+    overflow-x: hidden;
+    color: #333;
+}
+
+// Apply heading font to all headings
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-primary;
+    font-weight: 600;
+}
+
+// Global link styles
+a {
+    color: $text-gray;
+}
