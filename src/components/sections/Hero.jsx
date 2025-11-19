@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Hero.scss';
 
 function Hero({ scrollToSection }) {
@@ -7,7 +8,8 @@ function Hero({ scrollToSection }) {
             <div id="hero" className="hero-section alt-bg">
                 <div className="hero-content">
                     <h1>Introduction</h1>
-                    <p>I'm a motivated and reliable individual with a strong passion for technology, eager to grow my experience in cybersecurity and software engineering through an apprenticeship or entry-level role. I enjoy solving complex problems and continuously expanding my technical knowledge by exploring new programming languages and frameworks such as React. Alongside this, I'm developing my understanding of core cybersecurity principles through independent study, driven by a genuine curiosity for how systems and data can be protected.</p>
+                    <p>I'm driven by a genuine passion for using technology to solve real problems and protect people's digital lives. Whether I'm building intuitive web applications or exploring cybersecurity concepts, I'm motivated by the opportunity to make systems safer and more accessible for everyone. I'm actively seeking an apprenticeship or entry-level role where I can contribute fresh ideas, learn from experienced professionals, and help create technology that makes a positive difference in people's everyday lives.</p>
+                    <p className="blog-callout">Want to learn how I built this portfolio? <Link to="/blog/building-my-portfolio" className="blog-link">Read my latest blog post</Link> about collaborating with Alex and my plans for adding security features!</p>
 
                     <div className="cta-buttons">
                         <button onClick={() => scrollToSection('projects')} className="cta-button primary">View Projects</button>

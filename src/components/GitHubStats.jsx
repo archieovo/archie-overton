@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './GitHubStats.scss';
 
 function GitHubStats() {
     const [repos, setRepos] = useState([]);
@@ -42,48 +43,48 @@ function GitHubStats() {
     return (
         <div className="github-stats">
             <h2>Recent GitHub Activity</h2>
-            <div className="repos-grid">
+            <div className="grid">
                 {repos.map(repo => (
                     <a
                         key={repo.id}
                         href={repo.html_url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="repo-card"
+                        className="card"
                     >
-                        <div className="repo-header">
-                            <h3>{repo.name}</h3>
-                            <span className="repo-visibility">{repo.private ? 'Private' : 'Public'}</span>
-                        </div>
-                        <p className="repo-description">
-                            {repo.description || 'No description available'}
-                        </p>
-                        <div className="repo-stats">
-                            {repo.language && (
-                                <span className="repo-language">
-                                    <span className="language-dot"></span>
-                                    {repo.language}
-                                </span>
-                            )}
-                            <span className="repo-stars">⭐ {repo.stargazers_count}</span>
-                            <span className="repo-forks">🔱 {repo.forks_count}</span>
-                        </div>
-                        <div className="repo-updated">
-                            Updated: {new Date(repo.updated_at).toLocaleDateString()}
+                        <div className="card-content">
+                            <div className="repo-header">
+                                <h2>{repo.name}</h2>
+                                <span className="repo-visibility">{repo.private ? 'Private' : 'Public'}</span>
+                            </div>
+                            <p className="repo-description">
+                                {repo.description || 'No description available'}
+                            </p>
+                            <div className="repo-stats">
+                                {repo.language && (
+                                    <span className="repo-language">
+                                        <span className="language-dot"></span>
+                                        {repo.language}
+                                    </span>
+                                )}
+                                <span className="repo-stat">⭐ {repo.stargazers_count}</span>
+                                <span className="repo-stat">🔱 {repo.forks_count}</span>
+                            </div>
+                            <p className="updated">
+                                Updated: {new Date(repo.updated_at).toLocaleDateString()}
+                            </p>
                         </div>
                     </a>
                 ))}
             </div>
-            <div className="view-all-repos">
-                <a
-                    href="https://github.com/archieovo?tab=repositories"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="view-all-button"
-                >
-                    View All Repositories →
-                </a>
-            </div>
+            <a
+                href="https://github.com/archieovo?tab=repositories"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="load-more"
+            >
+                View All Repositories →
+            </a>
         </div>
     );
 }

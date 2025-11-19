@@ -7,8 +7,8 @@ export const workExperienceData = [
     certificateImage: '/assets/cert.png',
     certificateUrl: 'https://certificates.young-professionals.uk/c/021cccf5658648f8af19be2a5a3f7a98',
     description: [
-      'I took part in a work experience day at Experian, where I was introduced to how data is used to support business decisions. As part of the experience, I participated in a data analysis activity that involved sorting and interpreting a dataset to determine how different customer groups should receive differently priced Alton Towers ticket offers. This exercise helped me understand how companies use data-driven reasoning, segmentation, and teamwork to guide commercial decisions.',
-      'We were also given a tour of Experian\'s Nottingham office, where I gained an understanding of how different departments collaborate within a large technology organisation. One of the most valuable parts of the day was speaking with current degree apprentices about their application processes, the skills they developed, and what it\'s like working at Experian. Their advice gave me a clearer idea of the expectations of apprenticeship roles and motivated me to continue building my skills in technology and cybersecurity.'
+      'At Experian, I discovered how data can be a powerful force for good—helping businesses make fair, informed decisions that ultimately serve customers better. During a hands-on data analysis exercise, I worked with my team to segment customer groups and design appropriately priced Alton Towers ticket offers. This experience showed me how thoughtful data analysis can create value for both businesses and consumers, ensuring people get access to opportunities that genuinely suit their needs.',
+      'Touring Experian\'s Nottingham office and meeting degree apprentices was incredibly inspiring. Hearing their stories about growth, learning, and making real contributions to important projects reinforced my belief that I can make a meaningful impact in this field. Their journeys showed me that with dedication and the right opportunity, I can help build systems that protect people\'s financial data and empower them to make better decisions. This experience strengthened my commitment to pursuing a career where I can use technology to create positive, lasting change.'
     ]
   },
   {
@@ -20,10 +20,10 @@ export const workExperienceData = [
     logoUrl: 'https://mhrglobal.com/uk/en?_gl=1*gyk2af*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiA5uDIBhDAARIsAOxj0CGeh2sXWgjjNvikeN7pDfy9kBpJu6Ig9NIilN8Uc0ezQoSq6g12rw8aAif0EALw_wcB&gclsrc=aw.ds&gbraid=0AAAAAD84ZFnMLq5CrPAHSZjlRYLkIK9Iy',
     upcoming: true,
     description: [
-      'On the 26th of January, I will begin a five-day work experience placement at MHR Global, where I\'ll be spending three days with the Cybersecurity team and two days with the Software Development team. This opportunity will give me direct exposure to how security and engineering work together inside a professional tech environment.',
-      'During the cybersecurity portion, I expect to learn about real-world security practices such as threat identification, system monitoring, risk management, and the processes used to keep company and customer data safe.',
-      'In the software development section, I will be learning how developers collaborate on projects, write and maintain code, and apply modern development tools and workflows.',
-      'This experience will help me grow both technically and professionally, and I\'m excited to learn from experienced engineers while gaining a clearer understanding of the career path I want to follow.'
+      'I\'m thrilled to begin a five-day placement at MHR Global on January 26th, where I\'ll spend three days with the Cybersecurity team and two days with Software Development. This is an incredible opportunity to see firsthand how security professionals protect the systems that people rely on every day, and how developers create solutions that genuinely improve working lives.',
+      'What excites me most about the cybersecurity portion is learning how experts identify threats, monitor systems, and manage risks to safeguard sensitive data. In today\'s digital world, protecting people\'s information isn\'t just a technical challenge—it\'s a responsibility I take seriously. I\'m eager to understand the strategies and tools that keep organizations and their customers safe.',
+      'During the software development days, I\'m looking forward to seeing how teams collaborate to build reliable, user-focused applications. I want to learn how professional developers balance creativity with precision, and how they use modern tools and workflows to deliver solutions that make a real difference.',
+      'This experience represents more than just learning—it\'s about understanding how I can contribute meaningfully to a field that impacts people\'s lives. I\'m excited to absorb knowledge from experienced professionals and use these insights to shape a career focused on building secure, impactful technology.'
     ]
   }
 ];

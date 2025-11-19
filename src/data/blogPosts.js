@@ -1,5 +1,206 @@
 export const blogPosts = [
   {
+    id: 3,
+    title: "Building My Portfolio: A Journey in Learning React and Web Security",
+    slug: "building-my-portfolio",
+    date: "2025-01-19",
+    readTime: "10 min read",
+    category: "Web Development",
+    pinned: true,
+    excerpt: "How I collaborated with Alex to build this portfolio site using React, and my plans to add security-driven features as I continue learning.",
+    content: `
+## The Beginning: Why I Needed a Portfolio
+
+As a junior developer eager to break into the tech industry, I knew I needed a way to showcase my skills and experiences that went beyond a traditional CV. I wanted something that demonstrated not just what I'd learned, but how I could apply it. That's when I decided to build this portfolio website.
+
+## Finding the Right Approach
+
+I could have used a template or a portfolio builder, but I wanted to learn by doing. As someone passionate about cybersecurity and software development, I saw this as an opportunity to:
+- Build something real with React
+- Apply web development best practices
+- Create a foundation for implementing security features
+- Show potential employers my learning journey
+
+## Collaborating with Alex
+
+I was fortunate to work with Alex, a more experienced developer who guided me through the process. This collaboration taught me valuable lessons about how professional developers work together in the real world.
+
+### What I Learned from Working with Alex:
+
+**1. Breaking Down Complex Problems**
+Alex showed me how to structure a React application properly. Instead of building everything at once, we broke the portfolio into components:
+- Header with responsive navigation
+- Hero section with my introduction
+- Work experience cards
+- GitHub activity integration
+- Contact section
+
+**2. Modern Development Practices**
+Working with Alex, I learned about:
+- Component-based architecture in React
+- SCSS for maintainable styling
+- Responsive design principles
+- Git workflow and version control
+- Code organization and file structure
+
+**3. Problem-Solving Together**
+When I encountered challenges (like making the hamburger menu work on mobile), Alex didn't just fix it for me. Instead, we worked through solutions together, which helped me understand *why* certain approaches work better than others.
+
+## The Technology Stack
+
+### React & Modern JavaScript
+I chose React because it's widely used in the industry and teaches important concepts like:
+- State management with hooks
+- Component lifecycle
+- Props and data flow
+- Conditional rendering
+
+### SCSS for Styling
+Using SCSS instead of plain CSS taught me about:
+- Variables for consistent theming
+- Mixins for reusable styles
+- Nested selectors for organization
+- Responsive design with media queries
+
+### GitHub API Integration
+Integrating the GitHub API to display my recent projects was a great learning experience. It showed me how to:
+- Make API requests in React
+- Handle loading and error states
+- Display dynamic data from external sources
+
+## Challenges I Overcame
+
+### 1. Responsive Design
+Making the site work seamlessly across devices was harder than I expected. I learned about:
+- Breakpoints and media queries
+- Flexible layouts with flexbox and grid
+- Mobile-first design thinking
+- Testing across different screen sizes
+
+### 2. State Management
+Understanding when and how to use React's \`useState\` hook for things like the mobile menu toggle helped me grasp fundamental React concepts.
+
+### 3. Component Communication
+Learning how to pass data between components and handle user interactions taught me about React's data flow.
+
+## My Plans for Security Features
+
+As someone interested in cybersecurity, I'm excited to add security-driven features to this portfolio. Here's what I'm planning:
+
+### Phase 1: Security Headers
+\`\`\`javascript
+// Implementing Content Security Policy
+helmet({
+  contentSecurityPolicy: {
+    directives: {
+      defaultSrc: ["'self'"],
+      scriptSrc: ["'self'"],
+      styleSrc: ["'self'", "'unsafe-inline'"]
+    }
+  }
+})
+\`\`\`
+
+### Phase 2: Input Sanitization
+Even though this is a static portfolio, I want to add a contact form with proper:
+- Input validation
+- XSS protection
+- Rate limiting to prevent spam
+
+### Phase 3: HTTPS and Security Best Practices
+- Forcing HTTPS connections
+- Implementing security headers
+- Regular dependency updates
+- Adding a security.txt file
+
+### Phase 4: Security Audit Section
+I'm planning to add a dedicated section showing:
+- Security measures implemented
+- Security audit results
+- Best practices I'm following
+
+## What This Project Taught Me
+
+### Technical Skills
+- React component architecture
+- State management and hooks
+- API integration
+- Responsive web design
+- Git and version control
+- SCSS and CSS best practices
+
+### Professional Skills
+- Collaborating with experienced developers
+- Breaking down large projects into manageable tasks
+- Problem-solving through research and experimentation
+- Documenting my learning process
+- Understanding user experience
+
+### Security Mindset
+Even while building a simple portfolio, I'm thinking about:
+- How to protect user data (when I add a contact form)
+- Preventing common web vulnerabilities
+- Following secure coding practices
+- Planning security from the start, not as an afterthought
+
+## The Bigger Picture
+
+This portfolio represents more than just a website—it's proof that I can:
+- Learn new technologies independently
+- Work collaboratively with others
+- Apply theoretical knowledge to practical projects
+- Think about security throughout the development process
+- Communicate my learning journey effectively
+
+## Looking Forward
+
+I'm excited to continue improving this portfolio by:
+1. Adding more security features as I learn them
+2. Implementing a secure contact form
+3. Creating more blog posts about my learning journey
+4. Showcasing new projects as I build them
+5. Documenting security audits and improvements
+
+## Thanks to Alex
+
+I'm incredibly grateful to Alex for taking the time to mentor me through this project. Working with someone experienced showed me what professional development looks like and gave me confidence that I can contribute meaningfully to a development team.
+
+## My Advice to Other Junior Developers
+
+If you're building your own portfolio:
+
+**✅ DO:**
+- Build something real, not just a template
+- Work with others when you can—collaboration teaches you so much
+- Think about security from the start
+- Document your learning process
+- Make it responsive and accessible
+- Show your personality
+
+**❌ DON'T:**
+- Copy-paste without understanding
+- Ignore security considerations
+- Overcomplicate things
+- Be afraid to ask for help
+- Forget to test on different devices
+
+## Final Thoughts
+
+Building this portfolio has been one of the most valuable learning experiences of my journey so far. It's given me confidence in my abilities, shown me areas where I need to grow, and demonstrated to potential employers that I'm serious about becoming a professional developer.
+
+If you're a junior developer like me, I encourage you to build something real. The challenges you face and overcome will teach you more than any tutorial ever could.
+
+And remember: every senior developer was once a junior who kept learning and building.
+
+## Connect With Me
+
+If you have questions about how I built this or want to share your own portfolio journey, I'd love to hear from you! You can reach me through the contact section or connect with me on LinkedIn and GitHub.
+
+Let's learn and grow together!
+    `,
+    tags: ["React", "Portfolio", "Learning Journey", "Web Development", "Security"]
+  },
+  {
     id: 1,
     title: "Understanding OWASP Top 10: A Junior Developer's Guide",
     slug: "owasp-top-10-guide",
