@@ -2,13 +2,17 @@
 @use '../../styles/mixins' as *;
 
 // Work Experience Section Styles
+// Remove horizontal padding from the .bg container for full-width cards
+#workExperience + .bg {
+    padding: $section-padding 0;
+}
+
 .work-experience-grid {
     display: flex;
     flex-direction: column;
     gap: $spacing-xl;
-    max-width: 1200px;
-    margin: 0 auto;
     width: 100%;
+    padding-bottom: $spacing-xl;
 }
 
 .experience-card {
@@ -164,8 +168,12 @@
 }
 
 @include tablet {
+    #workExperience + .bg {
+        padding: 2vh 5vw 0;
+    }
+
     .work-experience-grid {
-        padding: 0 $spacing-md;
+        padding: 0;
     }
 
     .experience-card {
@@ -176,5 +184,11 @@
             max-width: 100%;
             width: 100%;
         }
+    }
+}
+
+@include mobile {
+    #workExperience + .bg {
+        padding: 2vh 3vw 0;
     }
 }

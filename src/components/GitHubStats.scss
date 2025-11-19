@@ -1,0 +1,148 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.github-stats {
+    h2 {
+        margin-bottom: $spacing-lg;
+        color: $text-light;
+    }
+
+    .grid {
+        @include grid-auto(350px);
+        margin-top: $spacing-lg;
+    }
+
+    .card {
+        @include card-style;
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-content {
+        padding: $spacing-md;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .repo-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: $spacing-sm;
+        margin-bottom: $spacing-sm;
+
+        h2 {
+            font-size: $font-size-lg;
+            margin: 0;
+            color: $text-light;
+            flex: 1;
+        }
+    }
+
+    .repo-visibility {
+        background-color: rgba($primary-color, 0.1);
+        color: $primary-color;
+        padding: 0.25rem 0.5rem;
+        border-radius: 12px;
+        font-size: $font-size-xs;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    .repo-description {
+        color: $text-medium-gray;
+        margin: 0 0 $spacing-md;
+        flex: 1;
+        font-size: $font-size-sm;
+        line-height: 1.5;
+    }
+
+    .repo-stats {
+        display: flex;
+        gap: $spacing-md;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: $spacing-sm;
+        font-size: $font-size-sm;
+        color: $text-medium-gray;
+    }
+
+    .repo-language {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+    }
+
+    .language-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: $primary-color;
+    }
+
+    .repo-stat {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+    }
+
+    .updated {
+        font-size: $font-size-xs;
+        color: $text-medium-gray;
+        margin: 0;
+    }
+
+    .load-more {
+        display: inline-block;
+        margin: $spacing-lg auto;
+        padding: 0.75rem 1.5rem;
+        font-size: $font-size-base;
+        border: none;
+        background: $primary-color;
+        color: #fff;
+        border-radius: 6px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background 0.3s ease;
+
+        &:hover {
+            background: $primary-hover;
+        }
+    }
+
+    .github-stats-loading,
+    .github-stats-error {
+        text-align: center;
+        padding: $spacing-lg;
+        color: $text-medium-gray;
+
+        a {
+            color: $primary-color;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// Responsive
+@include tablet {
+    .github-stats .grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@include mobile {
+    .github-stats .grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+}

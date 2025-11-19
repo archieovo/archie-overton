@@ -1,9 +1,19 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTheme } from '../../hooks/useTheme';
 import './Header.scss';
 
 function Header() {
     const { theme, toggleTheme } = useTheme();
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    };
 
     return (
         <>
@@ -13,13 +23,14 @@ function Header() {
                     <Link to="/" id="title">Archie Overton</Link>
                 </div>
 
-                <nav id="nav-links" aria-label="Page navigation">
+                {/* Desktop Navigation */}
+                <nav id="nav-links" aria-label="Page navigation" className="desktop-nav">
                     <Link to="/" className="nav-link">Home</Link>
                     <Link to="/blog" className="nav-link blog-button">Blog</Link>
                 </nav>
 
                 <button
-                    className="theme-toggle"
+                    className="theme-toggle desktop-only"
                     onClick={toggleTheme}
                     aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
                 >
@@ -42,13 +53,59 @@ function Header() {
                     )}
                 </button>
 
-                <nav id="social-links" aria-label="Social media links">
+                <nav id="social-links" aria-label="Social media links" className="desktop-only">
                     <a href="mailto:archieoverton@hotmail.com" target="_blank" rel="noopener noreferrer" className="fa fa-envelope-o" aria-label="Email Archie Overton"></a>
                     <a href="https://github.com/archieovo" target="_blank" rel="noopener noreferrer" className="fa fa-github" aria-label="GitHub Profile"></a>
                     <a href="https://www.linkedin.com/in/archie-overton-2a36902b9" target="_blank" rel="noopener noreferrer" className="fa fa-linkedin-square" aria-label="LinkedIn Profile"></a>
                 </nav>
+
+                {/* Mobile Hamburger Menu */}
+                <button
+                    className={`hamburger ${isMenuOpen ? 'open' : ''}`}
+                    onClick={toggleMenu}
+                    aria-label="Toggle menu"
+                    aria-expanded={isMenuOpen}
+                >
+                    {isMenuOpen ? (
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    ) : (
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    )}
+                </button>
             </header>
 
+            {/* Mobile Menu Dropdown */}
+            <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
+                <nav className="mobile-nav">
+                    <Link to="/" className="mobile-nav-link" onClick={closeMenu}>Home</Link>
+                    <Link to="/blog" className="mobile-nav-link" onClick={closeMenu}>Blog</Link>
+
+                    <div className="mobile-divider"></div>
+
+                    <div className="mobile-social">
+                        <a href="mailto:archieoverton@hotmail.com" target="_blank" rel="noopener noreferrer" className="fa fa-envelope-o" aria-label="Email"></a>
+                        <a href="https://github.com/archieovo" target="_blank" rel="noopener noreferrer" className="fa fa-github" aria-label="GitHub"></a>
+                        <a href="https://www.linkedin.com/in/archie-overton-2a36902b9" target="_blank" rel="noopener noreferrer" className="fa fa-linkedin-square" aria-label="LinkedIn"></a>
+                    </div>
+
+                    <button
+                        className="mobile-theme-toggle"
+                        onClick={() => { toggleTheme(); closeMenu(); }}
+                    >
+                        {theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+                    </button>
+                </nav>
+            </div>
+
+            {/* Overlay for mobile menu */}
+            {isMenuOpen && <div className="menu-overlay" onClick={closeMenu}></div>}
         </>
     );
 }

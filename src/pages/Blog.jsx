@@ -13,8 +13,9 @@ function Blog() {
       <section className="blog-content">
         <div className="blog-posts">
           {blogPosts.map((post) => (
-            <article key={post.id} className="blog-post-preview">
+            <article key={post.id} className={`blog-post-preview ${post.pinned ? 'pinned' : ''}`}>
               <div className="post-meta">
+                {post.pinned && <span className="pinned-badge">📌 Pinned</span>}
                 <span className="post-category">{post.category}</span>
                 <span className="post-date">{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
                 <span className="post-read-time">{post.readTime}</span>

@@ -1,4 +1,5 @@
 @use '../styles/variables' as *;
+@use '../styles/mixins' as *;
 
 // Home Page Layout
 .home-page {
@@ -44,4 +45,17 @@
 
 .alt-card {
     background-color: $bg-main;
+}
+
+// Responsive padding for all sections
+@include tablet {
+    .alt-bg, .bg {
+        padding: $section-padding-mobile;
+    }
+}
+
+@include mobile {
+    .alt-bg, .bg {
+        padding: 2vh 3vw;
+    }
 }

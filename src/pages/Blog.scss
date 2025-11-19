@@ -53,6 +53,12 @@
         border-left-color: $primary-hover;
     }
 
+    // Pinned post styling
+    &.pinned {
+        border-left-width: 6px;
+        box-shadow: 0 4px 12px rgba(87, 158, 133, 0.15);
+    }
+
     h2 {
         font-size: $font-size-lg;
         margin: $spacing-sm 0;
@@ -75,6 +81,15 @@
         flex-wrap: wrap;
         font-size: $font-size-sm;
         color: $text-medium-gray;
+
+        .pinned-badge {
+            background-color: rgba(255, 193, 7, 0.2);
+            color: #ffc107;
+            padding: 0.25rem 0.75rem;
+            border-radius: $border-radius-pill;
+            font-weight: 600;
+            font-size: $font-size-xs;
+        }
 
         .post-category {
             background-color: rgba(87, 158, 133, 0.2);
