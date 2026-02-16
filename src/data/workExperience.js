@@ -18,7 +18,6 @@ export const workExperienceData = [
     date: '26th January 2025',
     logo: '/assets/edited-mhr.png',
     logoUrl: 'https://mhrglobal.com/uk/en?_gl=1*gyk2af*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiA5uDIBhDAARIsAOxj0CGeh2sXWgjjNvikeN7pDfy9kBpJu6Ig9NIilN8Uc0ezQoSq6g12rw8aAif0EALw_wcB&gclsrc=aw.ds&gbraid=0AAAAAD84ZFnMLq5CrPAHSZjlRYLkIK9Iy',
-    upcoming: true,
     description: [
       'I\'m thrilled to begin a five-day placement at MHR Global on January 26th, where I\'ll spend three days with the Cybersecurity team and two days with Software Development. This is an incredible opportunity to see firsthand how security professionals protect the systems that people rely on every day, and how developers create solutions that genuinely improve working lives.',
       'What excites me most about the cybersecurity portion is learning how experts identify threats, monitor systems, and manage risks to safeguard sensitive data. In today\'s digital world, protecting people\'s information isn\'t just a technical challenge—it\'s a responsibility I take seriously. I\'m eager to understand the strategies and tools that keep organizations and their customers safe.',
