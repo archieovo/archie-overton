@@ -19,10 +19,11 @@ export const workExperienceData = [
     logo: '/assets/edited-mhr.png',
     logoUrl: 'https://mhrglobal.com/uk/en?_gl=1*gyk2af*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiA5uDIBhDAARIsAOxj0CGeh2sXWgjjNvikeN7pDfy9kBpJu6Ig9NIilN8Uc0ezQoSq6g12rw8aAif0EALw_wcB&gclsrc=aw.ds&gbraid=0AAAAAD84ZFnMLq5CrPAHSZjlRYLkIK9Iy',
     description: [
-      'I\'m thrilled to begin a five-day placement at MHR Global on January 26th, where I\'ll spend three days with the Cybersecurity team and two days with Software Development. This is an incredible opportunity to see firsthand how security professionals protect the systems that people rely on every day, and how developers create solutions that genuinely improve working lives.',
-      'What excites me most about the cybersecurity portion is learning how experts identify threats, monitor systems, and manage risks to safeguard sensitive data. In today\'s digital world, protecting people\'s information isn\'t just a technical challenge—it\'s a responsibility I take seriously. I\'m eager to understand the strategies and tools that keep organizations and their customers safe.',
-      'During the software development days, I\'m looking forward to seeing how teams collaborate to build reliable, user-focused applications. I want to learn how professional developers balance creativity with precision, and how they use modern tools and workflows to deliver solutions that make a real difference.',
-      'This experience represents more than just learning—it\'s about understanding how I can contribute meaningfully to a field that impacts people\'s lives. I\'m excited to absorb knowledge from experienced professionals and use these insights to shape a career focused on building secure, impactful technology.'
+      'During a five-day work experience placement at MHR Global in Ruddington, I spent three days with the Cyber Security team and two days with Software Engineering, gaining first-hand insight into how enterprise technology teams operate in a professional environment. ',
+      'In Cyber Security, I conducted an OSINT (Open-Source Intelligence) investigation on the organisation itself, analysing publicly available information to identify potential areas of risk and digital exposure, which I compiled into a structured report and presented to members of the cyber team — strengthening my analytical thinking, attention to detail, and ability to communicate technical findings clearly.',
+      'In Software Engineering, I designed and developed a Python-based to-do list application, implementing core functionality and applying unit testing principles to validate program behaviour and data handling, before documenting the technologies used and testing methodology in a technical report.',
+      'I also shadowed engineers to observe development workflows, testing processes, and team collaboration in practice.',
+      'Overall, this experience reinforced my passion for cyber security and software development, while enhancing my problem-solving, technical communication, and understanding of industry-standard practices within a professional technology environment.',
     ]
   }
 ];
